@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Date:"
+        android:textSize="19sp"
+
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="20/10/2003"
+        android:textSize="17sp"
+        android:id="@+id/historyOrderDate"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Receip#:"
+        android:textSize="14sp"
+        android:layout_marginLeft="150dp"
+        android:textStyle="bold"
+        android:textColor="#DE3905"
+
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="001"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+
+
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OrderItem"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Count"
+            android:layout_marginLeft="90dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:layout_marginLeft="90dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="banh mi"
+
+                android:gravity="center_horizontal"
+                android:id="@+id/historyOrderName"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:id="@+id/historyOrderCount"
+                android:layout_marginLeft="120dp"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100000"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/historyOrderPrice"
+                android:layout_marginLeft="120dp"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="discount"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:id="@+id/historyOrderDiscount"
+            android:layout_marginLeft="200dp"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+    <View
+        android:id="@+id/rectangle_4"
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+
+
+        android:background="#80E04699"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total amount"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10000000"
+            android:textColor="#DE3905"
+            android:id="@+id/historyOrderTotal"
+            android:layout_marginLeft="200dp"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+    <View
+        android:id="@+id/rectangle_5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+
+
+        android:background="#80E04699"
+        />
+</LinearLayout>

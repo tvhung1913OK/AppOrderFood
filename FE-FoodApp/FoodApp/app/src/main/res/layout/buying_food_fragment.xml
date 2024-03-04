@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#704335"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/fragment_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/food"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/imgProduct"
+            />
+        <ImageView
+            android:layout_margin="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:id="@+id/btnBackBuying"
+            android:src="@drawable/back"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rouded_listview"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvProductName"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginLeft="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="50dp"
+                android:text="Tsura Maki"
+                android:textSize="30dp"
+                android:gravity="top"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Ingredients"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/DesProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="creame cheese, sushi rice, fish, avacado, raw salmon"
+            android:textSize="20dp"
+
+            />
+        <TextView
+            android:id="@+id/tvProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Price: NRP 885.00"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Quantity: "
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+            <Button
+                android:id="@+id/btnDecrease"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/F3F3F3"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tvQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="20dp"
+                android:layout_toRightOf="@id/btnDecrease"
+                android:layout_toLeftOf="@id/btnIncrease"
+                android:textColor="@color/black"/>
+            <Button
+                android:id="@+id/btnIncrease"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/F3F3F3"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/totalProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Total: NRP 885.00"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/addOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/FE5E00"
+            android:drawableRight="@drawable/cart"
+            android:text="Add to cart"
+            style="@style/Widget.Material3.Button.ElevatedButton"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

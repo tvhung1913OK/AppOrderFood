@@ -1,0 +1,146 @@
+<!-- R.layout.fragment_cart -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/titleCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/btnBackCart"
+                android:src="@drawable/back"/>
+
+            <ImageView
+                android:id="@+id/img_cart"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="125dp"
+                android:src="@drawable/iccart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CART"
+                android:textColor="@color/black"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCart"
+            android:layout_width="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_height="530dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="80dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_cart" />
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/LinerLayoutPayment"
+
+        android:layout_gravity="bottom"
+
+        android:background="@color/white" >
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/checkboxAllItem"
+            android:layout_height="wrap_content">
+
+        </CheckBox>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Tất cả"
+            android:layout_marginTop="10dp"
+
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="160dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total: "
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/TotalAllOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FF0000"
+                    android:textSize="19sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Tiết kiệm: "
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="0"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:id="@+id/DiscountAllOrder"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/FE5E00"
+            android:text="Đặt món"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/addOrderDetail"
+            android:layout_marginBottom="5dp"
+
+            android:layout_gravity="bottom|left"/>
+    </LinearLayout>
+
+</FrameLayout>

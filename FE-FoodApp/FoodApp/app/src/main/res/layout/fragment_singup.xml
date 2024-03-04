@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login.SingupFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/singup_name"
+                android:hint="Your name"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_sgup"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/singup_phone"
+                android:hint="Your phone no"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_sgup"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/singup_pass"
+                android:hint="Your password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_sgup"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/singup_date"
+                android:hint="DD/MM/YYYY"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_sgup"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sex"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/singup_sex"
+                android:hint="Your sex"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_sgup"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Image"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/singup_image"
+                android:hint="Your link image"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_sgup"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/singup_email"
+                android:hint="Your email"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_sgup"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/singup_address"
+                android:hint="Your address"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_sgup"
+                android:padding="10dp"/>
+
+                <Button
+                    android:layout_width="360dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/FE5E00"
+                    android:text="Sing Up"
+                    android:id="@+id/singup_btn"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

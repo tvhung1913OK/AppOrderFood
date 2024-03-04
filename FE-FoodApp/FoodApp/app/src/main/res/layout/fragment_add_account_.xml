@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/douong"
+    android:orientation="vertical"
+    tools:context=".Fagment_Staff.AddAccountSatff_Fragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/vie_bg"
+        app:layout_scrollFlags="scroll|enterAlways|snap">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Add Account"
+                android:textColor="@color/FE5E00"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="Tên"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_sgup"
+                    android:hint="Nhập tên"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:paddingStart="20dp" />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.6"
+                    android:checkedButton="@+id/rdoNam"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdoNam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:buttonTint="@color/FE5E00"
+                        android:text="Nam" />
+
+                    <RadioButton
+                        android:id="@+id/rdoNu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/FE5E00"
+                        android:text="Nữ" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Số điện thoại"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_sgup"
+                android:hint="Nhập số điện thoại"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:paddingLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:imeOptions="actionNext"
+                android:text="Ngày sinh"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edtDate"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_sgup"
+                android:hint="MM/DD/YYYY"
+                android:imeOptions="actionNext"
+                android:paddingLeft="20dp" />
+
+            <TextView
+                android:id="@+id/tvPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Password"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_sgup"
+                android:hint="Nhập password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Email"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_sgup"
+                android:hint="Nhập email"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:paddingLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Địa chỉ"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edtAddress"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_sgup"
+                android:hint="Nhập địa chỉ"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:paddingLeft="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Ảnh đại diện"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edtImage"
+                    android:layout_width="270dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_sgup"
+                    android:hint="Nhập Link ảnh"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnReset"
+                    style="@style/Widget.Material3.Button.ElevatedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/FE5E00"
+                    android:imeOptions="actionNext"
+                    android:text="Reset"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnSave"
+                    style="@style/Widget.Material3.Button.ElevatedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:backgroundTint="@color/FE5E00"
+                    android:imeOptions="actionDone"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

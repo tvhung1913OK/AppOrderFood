@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imgAVTStaff"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/avt_staff" />
+        <TextView
+            android:id="@+id/txtNameStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text="ABC"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center">
+           <TextView
+               android:id="@+id/txtEmailStaff"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="abc@fpt.edu.vn"
+               android:textColor="@color/black"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=" | "/>
+
+           <TextView
+               android:id="@+id/txtPhoneStaff"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="abc@fpt.edu.vn"
+               android:textColor="@color/black"/>
+       </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/vie_bg"
+        >
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:text="Profile"
+            android:drawableRight="@drawable/next"
+             />
+        <TextView
+            android:id="@+id/manager_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:text="Manager account"
+            android:drawableRight="@drawable/next"
+            />
+        <TextView
+            android:id="@+id/change_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:text="Change password"
+
+            />
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/logout"/>
+    </LinearLayout>
+
+</LinearLayout>
